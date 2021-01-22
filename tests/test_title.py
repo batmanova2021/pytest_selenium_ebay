@@ -1,17 +1,14 @@
 import pytest
 from selenium import webdriver
 
-expected_title = 'Amazon.com: Online Shopping for Electronics, Apparel, Computers, Books, DVDs & more'
-base_url = 'https://www.amazon.com'
-search_title = 'Amazon.com: nike air max'
+expected_title = "Electronics, Cars, Fashion, Collectibles & More | eBay"
+base_url = "https://www.ebay.com/"
 
 
-@pytest.mark.smoketest
+@pytest.mark.anna6
 def test_title(browser):
-    # navigate to Amazon.com home page
+    # navigate to ebay.com home page
     browser.get(base_url)
-    # verify that website title is Amazon.com
+    # verify website title is ebay.com
     assert browser.title == expected_title
 
-
-    
