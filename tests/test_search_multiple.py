@@ -1,5 +1,4 @@
 import pytest
-from selenium import webdriver
 
 expected_title = "Electronics, Cars, Fashion, Collectibles & More | eBay"
 base_url = "https://www.ebay.com/"
@@ -10,7 +9,7 @@ base_url = "https://www.ebay.com/"
     "sunglasses",
     "glasses men",
     "glasses women"])
-@pytest.mark.anna8
+@pytest.mark.regressiontest
 def test_search(browser, item):
     browser.get(base_url)
     assert browser.title == expected_title
