@@ -20,4 +20,4 @@ def test_search_multiple_item(browser, item):
     browser.find_element_by_id("gh-ac").clear()
     browser.find_element_by_id("gh-ac").send_keys(item)
     browser.find_element_by_id("gh-btn").click()
-    assert browser.title == item + " | eBay"
+    assert browser.title == item.lower() + " | eBay"

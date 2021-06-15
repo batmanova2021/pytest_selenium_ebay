@@ -15,4 +15,5 @@ def test_multiple_search(browser, item):
     assert browser.title == expected_title
     browser.find_element_by_id("gh-ac").send_keys(item)
     browser.find_element_by_id("gh-btn").click()
-    assert browser.title == item + "| eBay"
+    assert browser.title == item + " | eBay"
+

@@ -7,8 +7,8 @@ from allure_commons.types import AttachmentType
 
 @pytest.fixture()
 def browser():
-    chrome_version_win = "89"
-    chrome_version_mac = "89"
+    chrome_version_win = "91"
+    chrome_version_mac = "91"
     chrome_version_linux = "89"
 
     if 'Win' in platform.platform():
