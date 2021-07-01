@@ -9,7 +9,7 @@ base_url = "https://www.ebay.com/"
                              ("BMW", "1800", "22031", "New & Used"),
                              ("Acura", "CL", "22031", "Used"),
                              ("Buick", "GS", "22031", "Used")])
-@pytest.mark.regressiontest2
+@pytest.mark.regressiontest
 def test_parametrize_search_cars(browser, make, model, zip, condition):
     browser.get(base_url)
     browser.find_element_by_link_text("Motors").click()
